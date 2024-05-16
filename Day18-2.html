@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(10,1fr);
+            padding: 10%;
+        }
+
+        .main div {
+            border: 1px solid black;
+            padding:2%;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+        }
+
+        body {
+            background-color: antiquewhite;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>Html Layouts Using Grid:</h1>
+    <div class="main">
+        <div style="grid-column: 1/5;">
+            <span> Header </span>
+        </div>
+        <div style="grid-column: 1/5;">
+            <span> Nav </span>
+        </div>
+        <div style="grid-row: 3/4;">
+            <span> Section </span>
+        </div>
+        <div style="grid-row: 4/5;">
+            <span> Article </span>
+        </div>
+        <div style="grid-row: 3/5; grid-column: 2/5;">
+            <span> Aside </span>
+        </div>
+        <div style="grid-column: 1/5;">
+            <span> Footer </span>
+        </div>
+
+    </div>
+</body>
+</html>

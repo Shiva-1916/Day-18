@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(5,1fr);
+            padding: 10%;
+
+        }
+
+        .main div {
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            background-color: aqua;
+            padding: 2%;
+            border: 1px solid black;
+        }
+        body {
+            background-color:antiquewhite;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>Created Tables using Grid:</h1>
+    <div class="main">
+    <div style="grid-column: 1/3;">
+        <span>Veggies</span>
+    </div>
+    <div>
+        <span>Tomato</span>
+    </div>
+    <div>
+        <span>Potato</span>
+    </div>
+    <div>
+        <span> Onions</span>
+    </div>
+    <div style="grid-row: 2/4;">
+        <span>Cost</span>
+    </div>
+    <div style="grid-row: 2/3;">
+        <span>MRP </span>
+    </div>
+    <div style="grid-row: 3/4;">
+        <span>RP </span>
+    </div>
+    <div>
+        <span> 20</span>
+    </div>
+    <div>
+        <span> 50</span>
+    </div>
+    <div>
+        <span> 50</span>
+    </div>
+    <div>
+        <span> 80</span>
+    </div>
+    <div>
+        <span> 80</span>
+    </div>
+    <div>
+        <span> 70</span>
+    </div>
+</div>
+</body>
+</html>
